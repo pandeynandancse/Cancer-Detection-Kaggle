@@ -10,3 +10,6 @@ docker run -ti melanoma:api /bin/bash
 docker run -p 12000:12000 -ti melanoma:api python3 api.py    
 # docker_port:host_machine_port
 
+
+a) if you remove apex and it's wrapper for model and optimizer then also set fp 16  -->> false
+
