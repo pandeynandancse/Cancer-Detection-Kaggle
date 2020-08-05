@@ -1,0 +1,12 @@
+#below line will tag container with melanoma:api
+docker build -f Dockerfile -t melanoma:api .
+
+
+#after that following command will change directory with 'app' directory that is working directory for this project/container
+docker run -ti melanoma:api /bin/bash
+#if you 'ls' then will see all project files listed.
+
+#following will open link to run project
+docker run -p 12000:12000 -ti melanoma:api python3 api.py    
+# docker_port:host_machine_port
+
